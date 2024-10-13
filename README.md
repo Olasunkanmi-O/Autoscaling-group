@@ -1,10 +1,13 @@
 # Creating an autoscaling group 
 
-1. Launch an instance, i used RedHat AMI fro this lab
+Auto scaling group are required to ensure high availability, scalability and reliability as well as for cost optimization. This service helps to scale up or scale down depending on traffic and usage of the resources. Below steps were taken to create an autoscaling group and tested to see how it operates.
+
+
+1. Launch an instance, I used RedHat AMI fro this lab
 ![](/img/01launch-instance.png)
 2. fill in the requirement for the instance 
 ![](/img/02choose-xter.png)
-3. Create a security group andf allow port 22 and port 80 from your IP (although in this project, i opened up the port to all traffic, this is not a good practice)
+3. Create a security group andf allow port 22 and port 80 from your IP (although in this project, I opened up the port to all traffic, this is not a good practice)
 ![](/img/03create-sg.png)
 4. Enter the userdata as shown below 
     ```bash
